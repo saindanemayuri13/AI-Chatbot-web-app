@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout - AI Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <h1>👋 Goodbye!</h1>
+                <p>You have been successfully logged out.</p>
+            </div>
+            <div class="logout-message">
+                <p>Thank you for using AI Chatbot!</p>
+                <p>Redirecting to login page...</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Clear the current user session
+        localStorage.removeItem('currentUser');
+        
+        // Redirect to login page after 2 seconds
+        setTimeout(() => {
+            window.location.href = 'index.html';
+        }, 2000);
+    </script>
+</body>
+</html>
